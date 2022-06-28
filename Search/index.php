@@ -40,7 +40,7 @@ if (empty($poisk))
     }    
     echo '</table>';
 } else {
-    $sqllike = "SELECT * FROM phone WHERE CodePainting LIKE '%$poisk%' OR Phone LIKE '%$poisk%' OR FIO LIKE '%$poisk%' OR DateBirth LIKE '%$poisk%' OR Region LIKE '%$poisk%'";
+    $sqllike = "SELECT * FROM phone WHERE Phone LIKE '%$poisk%' OR FIO LIKE '%$poisk%' OR DateBirth LIKE '%$poisk%' OR Region LIKE '%$poisk%'";
     $res = mysqli_query($link, $sqllike);
     echo '<table border=1>'.
         '<tr>'.
